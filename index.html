@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>タイピング</h1>
+    <section>
+      <p id="output"></p>
+      <form><input type="button" value="start" onclick="initGame(5)"></form>
+    </section>
+    <script>
+      let word=[ringo,banana];
+      let loop,count,miss,startTime;
+      
+      function initGame(num){
+        loop=kan;
+        count=1;
+        miss=0;
+        mondai=word[Math.floor(Math.random()*word.length)];
+        document.getElementById("output").innerHTML = count+"<br>"+mondai;
+        document.onkeydown = typingGame;
+        startTime=new Date();
+      }
+      }
+    </script>
+  </body>
+</html>
