@@ -18,10 +18,17 @@
         count=1;
         miss=0;
         mondai=word[Math.floor(Math.random()*word.length)];
-        document.getElementById("output").innerHTML = count+"<br>"+mondai;
+        document.getElementById('output').innerHTML = count+"<br>"+mondai;
         document.onkeydown = typingGame;
         startTime=new Date();
       }
+
+      function typingGame(event){
+        console.log(event.key);
+        if(event.key===mondai[0]){
+          mondai=mondai.substr(1,mondai);
+          document.getElementById()
+        }
       }
     </script>
   </body>
