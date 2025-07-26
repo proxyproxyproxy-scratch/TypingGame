@@ -10,11 +10,11 @@
       <form><input type="button" value="start" onclick="initGame(5)"></form>
     </section>
     <script>
-      let word=[ringo,banana];
+      let word=['ringo','banana'];
       let loop,count,miss,startTime;
       
       function initGame(num){
-        loop=kan;
+        loop=num;
         score=0;
         miss=0;
         mondai=word[Math.floor(Math.random()*word.length)];
