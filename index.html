@@ -15,10 +15,10 @@
       
       function initGame(num){
         loop=kan;
-        count=1;
+        score=0;
         miss=0;
         mondai=word[Math.floor(Math.random()*word.length)];
-        document.getElementById('output').innerHTML = count+"<br>"+mondai;
+        document.getElementById('output').innerHTML = score+"<br>"+mondai;
         document.onkeydown = typingGame;
         startTime=new Date();
       }
@@ -27,7 +27,20 @@
         console.log(event.key);
         if(event.key===mondai[0]){
           mondai=mondai.substr(1,mondai);
-          document.getElementById()
+          document.getElementById('output').innerHTML =　score+'<br>'+mondai;
+          if(mondai.length===0){
+            score();
+            if(loop===0){
+              document.getElementById('output').innerHTML = '<FINISH><br>score:'+score;
+              //if(document.cookie);
+              //document.cookie='score='+score;
+              document.onkeydown=null;
+              document.getElementById('output').innerHTML = document.getElementById('output')+'<br>スコアを保存しました';
+            }else{
+              mondai = Math.floor(Math.random()*word.length);
+              document.getElementById('output').innerHTML = mondai+score;
+            }
+          }
         }
       }
     </script>
