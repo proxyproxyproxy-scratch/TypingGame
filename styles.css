@@ -4,6 +4,9 @@ body{
 }
 section{
   background-color:#ffbf00;
+  /* height: device-Height;
+     width: device-Width; 
+     set with JS */
 }
 h1{}
 p#output{}
