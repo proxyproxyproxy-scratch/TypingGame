@@ -1,9 +1,9 @@
-.body{
+body{
   background-color:white;
   text-align:center;
 }
-.section{
+section{
   background-color:#ffbf00;
 }
-.h1{}
-.p#output{}
+h1{}
+p#output{}
