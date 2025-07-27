@@ -7,10 +7,19 @@
   </head>
   <body>
     <section>
+      <p id="title"></p>
       <form><input type="button" value="start" onclick="initGame(5)"></form>
       <p id="output"></p>
     </section>
     <script>
+let form = document.createElement("form");
+let input = document.createElement("input");
+input.type="button";
+input.value="play";
+input.onclick="initGame()";
+document.querySelector('section').appendChild(form);
+document.querySelector('form').appendchild(input);
+      
       let word=['ringo','banana'];
       let loop,count,miss,startTime;
       
