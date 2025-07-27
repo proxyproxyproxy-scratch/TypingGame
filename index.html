@@ -15,14 +15,14 @@
       function initHTMLstyle(){
         // set section Height & Width
         let section = document.getElementById('section');
-        section.style.height = window.innerHeight;
-        section.style.width = window.innerWidth;
+        section.style.height = window.innerHeight+'px';
+        section.style.width = window.innerWidth+'px';
         // create play button
         let form = document.createElement('form');
         let input = document.createElement('input');
         input.type='button';
         input.value = 'play';
-        input.onclick = initGame();
+        input.onclick = initGame(10);
         
         section.appendChild(form);
         form.appendChild(input);
