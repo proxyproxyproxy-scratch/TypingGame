@@ -3,22 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>タイピングラッシュ</title>
   </head>
   <body>
-    <section>
+    <section id="section">
       <p id="title"></p>
-      <form><input type="button" value="start" onclick="initGame(5)"></form>
       <p id="output"></p>
     </section>
     <script>
-let form = document.createElement("form");
-let input = document.createElement("input");
-input.type="button";
-input.value="play";
-input.onclick="initGame()";
-document.querySelector('section').appendChild(form);
-document.querySelector('form').appendchild(input);
+      function initHTMLstyle(){
+        // set section Height & Width
+        let section　=　document.getElementById('section');
+        section.style.height = window.innerHeight;
+        section.style.width = window.innerWidth;
+        // create play button
+        let form = document.createElement('form');
+        let input = document.createElement('input');
+        input.type='button';
+        input.value='play';
+        input.onclick='initGame()';
+        
+        section.appendChild(form);
+        form.appendchild(input);
+
+        let title = document.getElementById('title');
+        title.textContent = 'タイピングラッシュ';
+      }
+      initHTMLstyle();
+
       
       let word=['ringo','banana'];
       let loop,count,miss,startTime;
