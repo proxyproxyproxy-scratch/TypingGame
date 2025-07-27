@@ -30,9 +30,12 @@
         let title = document.getElementById('title');
         title.textContent = 'タイピングラッシュ';
       }
-      initHTMLstyle();
 
-      
+      document.addEventListener("DOMContentLoaded", function() {
+        initHTMLstyle();
+        console.log("DOMが読み込まれました！");
+      });
+
       let word=['ringo','banana'];
       let loop,score,miss,startTime;
       
