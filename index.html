@@ -52,7 +52,7 @@
           mondai=mondai.substr(1,mondai);
           document.getElementById('output').innerHTML = score+'<br>'+mondai;
           if(mondai.length===0){
-            score();
+            scoreUP();
             if(loop===0){
               document.getElementById('output').innerHTML = '<FINISH><br>score:'+score;
               //if(document.cookie);
@@ -68,7 +68,7 @@
         }
       }
 
-      function score(){
+      function scoreUP(){
         score+=1;
       }
     </script>
