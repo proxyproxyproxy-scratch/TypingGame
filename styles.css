@@ -6,7 +6,17 @@ body{
 section{
   margin: 0px;
   padding: 40px;
-  background-color:#674598;
+  background: repeating-linear-gradient(
+    45deg,
+    #6a0dad,          /* 濃いむらさき（ベース） */
+    #6a0dad 40px,
+        #7f00ff 40px,     /* 青っぽいむらさき */
+        #7f00ff 60px,
+        #ffff00 60px,     /* 黄色 */
+        #ffff00 80px,
+        #00ff00 80px,     /* 緑 */
+        #00ff00 100px
+      );
   /* height: device-Height;
      width: device-Width; 
      set with JS */
