@@ -1,8 +1,12 @@
 body{
+  margin: 0px;
+  padding: 0px;
   background-color:white;
   text-align:center;
 }
 section{
+  margin: 0px;
+  padding: 40px;
   background-color:#ffbf00;
   /* height: device-Height;
      width: device-Width; 
