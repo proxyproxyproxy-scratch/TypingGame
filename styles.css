@@ -7,10 +7,14 @@ body{
 section{
   margin: 0px;
   padding: 40px;
-  background-color:#ffbf00;
+  background-color:#674598;
   /* height: device-Height;
      width: device-Width; 
      set with JS */
 }
-h1{}
+input{
+  
+}
+
 p#output{}
+/* others set with JS */
