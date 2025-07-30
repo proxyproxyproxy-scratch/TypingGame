@@ -2,25 +2,36 @@ body{
   margin: 0px;
   padding: 0px;
   text-align:center;
+  display: flex;
 }
 section{
   margin: 0px;
   padding: 40px;
-  background: repeating-linear-gradient(
-    45deg,
-        #6a0dad,          /* 濃いむらさき（ベース） */
-        #6a0dad 90px,
-        #7f00ff 90px,     /* 青紫 */
-        #7f00ff 180px,
-        #ffff99 180px,      /* 青っぽいむらさき */
-        #ffff99 181px
-      );
+  background:
+  repeating-linear-gradient(
+    120deg,
+    #ffff80,           /* きいろ */
+    #ffff80 5px,
+    #ff88b9 5px,
+    #ff88b980 55px,
+    #ffff8080 55px,
+    #ffff8080 60px,
+    transparent 60px,  /* 赤の後に透明 */
+    transparent 300px  /* 次のラインに進む */
+  ),
+  repeating-linear-gradient(
+    30deg,
+    #6a0dad,          /* 濃いむらさき（ベース） */
+    #6a0dad 90px,
+    #7f00ff 90px,      /* 青紫 */
+    #7f00ff 180px
+  );
   /* height: device-Height;
      width: device-Width; 
      set with JS */
 }
 input{
-  margin: 20px 0px;
+  margin: 20px auto;
   font-size: 24px;      /* テキストを大きく */
   padding: 15px 40px;   /* ボタン自体を大きく */
   background-color: #fff0f5; /* 緑色の背景 */
@@ -28,14 +39,25 @@ input{
   border: none;         /* 枠線なし */
   border-radius: 8px;   /* 角を丸く */6
   cursor: pointer;      /* マウスポインタを変える */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px #000033;
   transition: background-color 0.3s;
 }
+input:hover{
+  background-color: #f8dce8;
+}
 p#title{
-  margin: 20px 40px;
+  margin: 20px auto;
   padding: 10px 0px;
+  font-size: 16px;
+  width: 400px;
   background-color: #ffffbf;
   border-radius: 8px;   /* 角を丸く */
+  cursor: pointer;      /* マウスポインタを変える */
+  box-shadow: 0 4px 10px #000033;
+  transition: background-color 0.3s
+}
+p#title:hover{
+  background-color: #e0e080;
 }
 p#output{}
 /* others set with JS */
