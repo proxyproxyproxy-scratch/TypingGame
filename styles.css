@@ -24,7 +24,7 @@ section{
 input{
   font-size: 24px;      /* テキストを大きく */
   padding: 15px 40px;   /* ボタン自体を大きく */
-  background-color: #ffffffdd; /* 緑色の背景 */
+  /*background-color: #ffffffdd; /* 緑色の背景 */
   color: #333;         /* 白い文字 */
   border: none;         /* 枠線なし */
   border-radius: 8px;   /* 角を丸く */
