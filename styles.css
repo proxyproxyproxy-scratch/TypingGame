@@ -9,29 +9,33 @@ section{
   background: repeating-linear-gradient(
     45deg,
         #6a0dad,          /* 濃いむらさき（ベース） */
-        #6a0dad 60px,      /* 幅を広げた */
-        #7f00ff 60px,      /* 青っぽいむらさき */
-        #7f00ff 120px,     /* 幅を広げた */
-        #ffff99 120px,     /* 薄い黄色 */
-        #ffff99 180px,     /* 幅を広げた */
-        #00b300 180px,     /* 濃い黄緑 */
-        #00b300 240px
+        #6a0dad 90px,
+        #7f00ff 90px,     /* 青紫 */
+        #7f00ff 180px,
+        #ffff99 180px,      /* 青っぽいむらさき */
+        #ffff99 181px
       );
   /* height: device-Height;
      width: device-Width; 
      set with JS */
 }
 input{
+  margin: 20px 0px;
   font-size: 24px;      /* テキストを大きく */
   padding: 15px 40px;   /* ボタン自体を大きく */
-  /*background-color: #ffffffdd; /* 緑色の背景 */
+  background-color: #fff0f5; /* 緑色の背景 */
   color: #333;         /* 白い文字 */
   border: none;         /* 枠線なし */
-  border-radius: 8px;   /* 角を丸く */
+  border-radius: 8px;   /* 角を丸く */6
   cursor: pointer;      /* マウスポインタを変える */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s;
 }
-
+p#title{
+  margin: 20px 0px;
+  padding: 10px 0px;
+  background-color: #ffffbf;
+  border-radius: 8px;   /* 角を丸く */
+}
 p#output{}
 /* others set with JS */
