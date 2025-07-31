@@ -19,13 +19,13 @@
         section.style.height = window.innerHeight+'px';
         section.style.width = window.innerWidth+'px';
         // create play button
-        createButton('スタート');
-        createButton('遊び方');
+        createButton('スタート','','startButton');
+        createButton('遊び方','','howButton');
         let title = document.getElementById('title');
         title.textContent = 'タイピングラッシュ';
         title.style.fontSize = '32px';
-
-       input.addEventListener("click",levelchoiceHTMLstyle);
+        
+        document.getElementById('startbutton').addEventListener("click",levelchoiceHTMLstyle);
       }
 
       function levelchoiceHTMLstyle(){
@@ -34,19 +34,20 @@
         let title = document.getElementById('title');
         title.textContent = '--= レベルを選択する =--';
         title.style.fontSize = '32px';
-        createButton('Select',' Lv.1 入門レベル');
-        createButton('Select',' Lv.2 初級レベル');
-        createButton('Select',' Lv.3 中級レベル');
-        createButton('Select',' Lv.4 上級レベル');
-        createButton('Select',' Lv.5 鬼難レベル');
+        createButton('Select',' Lv.1 入門レベル','play1');
+        createButton('Select',' Lv.2 初級レベル','play2');
+        createButton('Select',' Lv.3 中級レベル','play3');
+        createButton('Select',' Lv.4 上級レベル','play4');
+        createButton('Select',' Lv.5 鬼難レベル','play5');
       }
       
-      function createButton(buttonValue,subtext = ''){ 
+      function createButton(buttonValue,subtext = '',id){ 
         // subtext initalValue is blank
         let form = document.createElement('form');
         let input = document.createElement('input');
         input.type = 'button';
         input.value = buttonValue;
+        input.id = id;
         
         let subtextNode = document.createElement('span');
         subtextNode.textContent = subtext;
