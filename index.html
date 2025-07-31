@@ -23,7 +23,7 @@
         createButton('遊び方');
         let title = document.getElementById('title');
         title.textContent = 'タイピングラッシュ';
-        title.style.fontSize = '32px'
+        title.style.fontSize = '32px';
 
        input.addEventListener("click",levelchoiceHTMLstyle);
       }
@@ -40,19 +40,20 @@
         createButton('Select',' Lv.4 上級レベル');
         createButton('Select',' Lv.5 鬼難レベル');
       }
-      function createButton(buttonvalue,subtext = ''){ 
+      
+      function createButton(buttonValue,subtext = ''){ 
         // subtext initalValue is blank
         let form = document.createElement('form');
         let input = document.createElement('input');
-        input.type='button';
-        input.value = buttonvalue;
+        input.type = 'button';
+        input.value = buttonValue;
         
         let subtextNode = document.createElement('span');
         subtextNode.textContent = subtext;
         
-        section.appendChild(form);
+        document.querySelector('section').appendChild(form);
         form.appendChild(input);
-        form.appendchild(subtextNode);
+        form.appendChild(subtextNode);
       }
       
       document.addEventListener('DOMContentLoaded',initHTMLstyle);
