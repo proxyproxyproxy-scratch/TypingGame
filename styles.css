@@ -56,10 +56,6 @@ p#title{
   border-radius: 8px;   /* 角を丸く */
   cursor: pointer;      /* マウスポインタを変える */
   box-shadow: 0 4px 10px #000033;
-  transition: background-color 0.3s
-}
-p#title:hover{
-  background-color: #e0e080;
 }
 p#output{}
 /* others set with JS */
