@@ -63,7 +63,7 @@
 
       
       let word=['ringo','banana'];
-      let loop,score,miss,startTime,mondai;
+      let loop,score,miss,startTime,mondai,combo;
       
       function initGame(num){
         loop=num;
@@ -78,7 +78,7 @@
       function typingGame(event){
         console.log(event.key);
         if(event.key===mondai[0]){
-          mondai=mondai.substr(1,mondai);
+          mondai=mondai.substr(1);
           document.getElementById('output').innerHTML = score+'<br>'+mondai;
           if(mondai.length===0){
             scoreUP();
@@ -94,11 +94,15 @@
               loop --;
             }
           }
+        }else{
+          miss += 1;
+          combo = 0;
         }
       }
 
       function scoreUP(){
-        score+=1;
+        combo += 1;
+        score+= combo;
       }
     </script>
   </body>
