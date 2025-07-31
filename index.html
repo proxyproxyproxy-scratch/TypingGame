@@ -30,11 +30,11 @@
 
       document.addEventListener('DOMContentLoaded',initHTMLstyle)
 
-      createButton(value){
+      createButton(buttonvalue){
         let form = document.createElement('form');
         let input = document.createElement('input');
         input.type='button';
-        input.value = value;
+        input.value = buttonvalue;
         
         section.appendChild(form);
         form.appendChild(input);
