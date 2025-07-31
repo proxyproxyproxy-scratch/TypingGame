@@ -12,20 +12,15 @@
       <p id="output"></p>
     </section>
     <script>
+      
       function initHTMLstyle(){
         // set section Height & Width
         let section = document.getElementById('section');
         section.style.height = window.innerHeight+'px';
         section.style.width = window.innerWidth+'px';
         // create play button
-        let form = document.createElement('form');
-        let input = document.createElement('input');
-        input.type='button';
-        input.value = 'Play';
-        
-        section.appendChild(form);
-        form.appendChild(input);
-
+        createButton('スタート');
+        createButton('遊び方')
         let title = document.getElementById('title');
         title.textContent = 'タイピングラッシュ';
         title.style.fontSize = '32px'
@@ -34,6 +29,22 @@
       }
 
       document.addEventListener('DOMContentLoaded',initHTMLstyle)
+
+      createButton(value){
+        let form = document.createElement('form');
+        let input = document.createElement('input');
+        input.type='button';
+        input.value = value;
+        
+        section.appendChild(form);
+        form.appendChild(input);
+
+      }
+
+
+
+
+
       
       let word=['ringo','banana'];
       let loop,score,miss,startTime,mondai;
