@@ -43,6 +43,9 @@
         createButton('Select',' Lv.3 中級レベル','play3');
         createButton('Select',' Lv.4 上級レベル','play4');
         createButton('Select',' Lv.5 鬼難レベル','play5');
+        document.querySelectorAll('input').forEach(input => {
+          input.style.fontSize = '12px';
+        });
       }
       
       function createButton(buttonValue,subtext = '',id){ 
