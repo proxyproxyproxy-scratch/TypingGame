@@ -34,7 +34,7 @@ section{
 }
 input{
   margin: 20px auto;
-  font-size: 24px;      /* テキストを大きく */
+  /* font-size set with JS */
   padding: 15px 40px;   /* ボタン自体を大きく */
   background-color: #fff0f5; /* 緑色の背景 */
   color: #333;         /* 白い文字 */
