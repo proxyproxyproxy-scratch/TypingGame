@@ -32,6 +32,11 @@ section{
      width: device-Width; 
      set with JS */
 }
+form{
+  border: 1px　solid #ffff00;
+  border-radius: 8px;
+  background-color: #ffffff80;
+}
 input{
   margin: 20px auto;
   /* font-size set with JS */
@@ -39,7 +44,7 @@ input{
   background-color: #fff0f5; /* 緑色の背景 */
   color: #333;         /* 白い文字 */
   border: none;         /* 枠線なし */
-  border-radius: 8px;   /* 角を丸く */6
+  border-radius: 8px;   /* 角を丸く */
   cursor: pointer;      /* マウスポインタを変える */
   box-shadow: 0 4px 10px #000033;
   transition: background-color 0.3s;
