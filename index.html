@@ -22,7 +22,7 @@
         createButton('スタート','','startButton');
         createButton('遊び方','','howButton');
         document.querySelectorAll('input').forEach(input => {
-          input.style.fontSize: 24px;
+          input.style.fontSize: '24px';
         });
         
         let title = document.getElementById('title');
@@ -92,7 +92,7 @@
               //if(document.cookie);
               //document.cookie='score='+score;
               document.onkeydown=null;
-              document.getElementById('output').innerHTML = document.getElementById('output')+'<br>スコアを保存しました';
+              document.getElementById('output').innerHTML += '<br>スコアを保存しました';
             }else{
               mondai = word[Math.floor(Math.random()*word.length)];
               document.getElementById('output').innerHTML = mondai+score;
