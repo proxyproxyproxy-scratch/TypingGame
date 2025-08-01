@@ -21,6 +21,10 @@
         // create play button
         createButton('スタート','','startButton');
         createButton('遊び方','','howButton');
+        inputs.forEach(input => {
+          input.style.font-size: 24px;
+        });
+        
         let title = document.getElementById('title');
         title.textContent = 'タイピングラッシュ';
         title.style.fontSize = '32px';
