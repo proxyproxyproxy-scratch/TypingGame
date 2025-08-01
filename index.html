@@ -47,8 +47,9 @@
         let input = document.createElement('input');
         input.type = 'button';
         input.value = buttonValue;
-        input.id = id;
-        
+        if(id!=unrefined){
+          input.id = id;
+        }
         let subtextNode = document.createElement('span');
         subtextNode.textContent = subtext;
         
