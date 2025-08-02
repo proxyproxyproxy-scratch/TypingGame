@@ -51,7 +51,7 @@
         });
       }
       
-      function createButton(buttonValue,subtext = '',id){ 
+      function createButton(buttonValue,subtext,id){ 
         // subtext initalValue is blank
         let form = document.createElement('form');
         let input = document.createElement('input');
@@ -60,12 +60,14 @@
         if(id !== undefined){
           input.id = id;
         }
-        let subtextNode = document.createElement('span');
-        subtextNode.textContent = subtext;
-        
         document.querySelector('section').appendChild(form);
         form.appendChild(input);
-        form.appendChild(subtextNode);
+        
+        if(id !== undefined){
+          let subtextNode = document.createElement('span');
+          subtextNode.textContent = subtext;
+          form.appendChild(subtextNode);
+        }
       }
       
       document.addEventListener('DOMContentLoaded',initHTMLstyle);
@@ -108,7 +110,7 @@
           }
         }else{
           miss += 1;
-          combo = 0;
+          comb 0;
         }
       }
 
