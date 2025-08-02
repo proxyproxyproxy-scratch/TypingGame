@@ -32,7 +32,7 @@ section{
      width: device-Width; 
      set with JS */
 }
-form{
+span{
   border: 1px　solid #ffff00;
   border-radius: 8px;
   background-color: #ffffff80;
