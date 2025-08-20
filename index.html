@@ -48,6 +48,7 @@
         document.querySelectorAll('input').forEach(input => {
           input.style.fontSize = '18px';
           input.style.margin = '20px auto 0px';
+          input.onclick=function(){window.open('/play.html#'+input.id);}
         });
       }
       
