@@ -1,1 +1,46 @@
+let word=['ringo','banana'];
+      let loop,score,miss,startTime,mondai,combo;
+      
+      function initGame(num){
+        loop=num;
+        score=0;
+        miss=0;
+        combo=0;
+        mondai=word[Math.floor(Math.random()*word.length)];
+        document.getElementById('output').innerHTML = score+"<br>"+mondai;
+        document.onkeydown = typingGame;
+        startTime=new Date();
+      }
 
+      function typingGame(event){
+        console.log(event.key);
+        if(event.key===mondai[0]){
+          mondai=mondai.substr(1);
+          document.getElementById('output').innerHTML = score+'<br>'+mondai;
+          if(mondai.length===0){
+            scoreUP();
+            if(loop===0){
+              document.getElementById('output').innerHTML = '<FINISH><br>score:'+score;
+              //if(document.cookie);
+              //document.cookie='score='+score;
+              document.onkeydown=null;
+              document.getElementById('output').innerHTML += '<br>スコアを保存しました';
+            }else{
+              mondai = word[Math.floor(Math.random()*word.length)];
+              document.getElementById('output').innerHTML = mondai+score;
+              loop --;
+            }
+          }
+        }else{
+          miss += 1;
+          combo = 0;
+        }
+      }
+
+      function scoreUP(){
+        score += 1
+        #更なる機能を
+      }
+    </script>
+  </body>
+</html>
